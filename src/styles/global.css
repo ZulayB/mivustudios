@@ -57,7 +57,7 @@
     transform: translateY(-50%);
     font-family: var(--font-display);
     font-size: clamp(10.56rem, 19.36vw, 19.36rem);
-    color: rgba(245, 242, 237, 0.03);
+    color: rgba(245, 242, 237, 0.07);
     line-height: 1;
     pointer-events: none;
     user-select: none;
