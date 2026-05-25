@@ -50,16 +50,24 @@ import "../styles/global.css";
 			</header>
 
 			<main
-				class="hero-decoration relative flex flex-col gap-[clamp(1.5rem,3vh,2.5rem)] py-[clamp(0.9856rem,3.9424vh,1.9712rem)] portrait:pt-[clamp(2rem,6vh,4rem)]"
+				class="hero-decoration relative flex min-w-0 flex-col gap-[clamp(1.5rem,3vh,2.5rem)] py-[clamp(0.9856rem,3.9424vh,1.9712rem)] portrait:pt-[clamp(2rem,6vh,4rem)]"
 			>
 				<div
-					class="animate-fade-up flex items-center gap-[clamp(1.5rem,3vw,3rem)] [animation-delay:0.1s]"
+					class="animate-fade-up w-full min-w-0 overflow-hidden [animation-delay:0.1s]"
 				>
-					<p
-						class="whitespace-nowrap text-[clamp(1.2rem,1.35vw,2.6rem)] font-light uppercase tracking-[0.75em] text-paper/50"
-					>
-						Sport · Entertainment · Fan Engagement
-					</p>
+					<div class="flex w-max animate-marquee">
+						<p
+							class="whitespace-nowrap pr-[clamp(2rem,4vw,4rem)] text-[clamp(1.2rem,1.35vw,2.6rem)] font-light uppercase tracking-[0.75em] text-paper/50"
+						>
+							Sport · Entertainment · Fan Engagement
+						</p>
+						<p
+							aria-hidden="true"
+							class="whitespace-nowrap pr-[clamp(2rem,4vw,4rem)] text-[clamp(1.2rem,1.35vw,2.6rem)] font-light uppercase tracking-[0.75em] text-paper/50"
+						>
+							Sport · Entertainment · Fan Engagement
+						</p>
+					</div>
 				</div>
 
 				<div
