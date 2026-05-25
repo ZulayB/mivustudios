@@ -9,85 +9,154 @@ import "../styles/global.css";
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
+
 		<title>Mivu — The Sport-Native Attention Engine</title>
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
 		<link
 			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
-	<body>
+
+	<body class="relative overflow-x-hidden text-paper">
+		<!-- Background image -->
+<div
+	class="pointer-events-none fixed inset-0 -z-20 bg-[url('/images/background_mivu.png')] bg-cover bg-center bg-no-repeat opacity-[0.5]"
+></div>
+
 		<div
 			class="mx-auto grid min-h-screen max-w-[1232px] grid-rows-[auto_1fr] px-[clamp(1.32rem,5.28vw,4.4rem)] pt-[clamp(0.9856rem,2.464vw,1.9712rem)] pb-[clamp(1.76rem,4.4vw,3.52rem)]"
 		>
-			<header class="flex items-center justify-between border-b border-paper/10 pb-[1.54rem]">
+			<header
+				class="flex items-center justify-between border-b border-paper/15 pb-[1.54rem]"
+			>
 				<a href="#" class="block">
-					<img src="/images/mivu-logo.svg" alt="MIVU" height="60" class="block h-[60px] w-auto" />
+					<img
+						src="/images/mivu-logo.svg"
+						alt="MIVU"
+						height="60"
+						class="block h-[60px] w-auto"
+					/>
 				</a>
+
 				<span
-					class="hidden rounded-full border border-acid/30 px-[0.88rem] py-[0.33rem] text-[0.6336rem] font-medium uppercase tracking-[0.18em] text-acid sm:inline-block">
+					class="hidden rounded-full border border-acid/30 px-[0.88rem] py-[0.33rem] text-[0.6336rem] font-medium uppercase tracking-[0.18em] text-acid sm:inline-block"
+				>
 					Get in touch
 				</span>
 			</header>
+
 			<main
-				class="hero-decoration relative flex flex-col justify-center gap-[1.32rem] py-[clamp(0.9856rem,3.9424vh,1.9712rem)] portrait:justify-start portrait:pt-[clamp(2rem,6vh,4rem)]">
-				<p
-					class="animate-fade-up text-[0.88rem] font-light uppercase tracking-[0.22em] text-paper/85 [animation-delay:0.1s]">
-					Sport · Entertainment · Fan Engagement
-				</p>
-
-				<h1
-					class="animate-fade-up max-w-[14ch] font-display font-bold text-[clamp(3.96rem,9.68vw,9.68rem)] leading-[0.88] tracking-[0.02em] [animation-delay:0.2s]"
+				class="hero-decoration relative flex flex-col gap-[clamp(1.5rem,3vh,2.5rem)] py-[clamp(0.9856rem,3.9424vh,1.9712rem)] portrait:pt-[clamp(2rem,6vh,4rem)]"
+			>
+				<div
+					class="animate-fade-up flex items-center gap-[clamp(1.5rem,3vw,3rem)] [animation-delay:0.1s]"
 				>
-					Where fans<br />
-					<em class="block not-italic text-acid">feel it.</em>
-				</h1>
-
-				<div class="animate-fade-up flex items-center gap-[1.32rem] [animation-delay:0.35s]">
-					<div class="h-px max-w-[4.4rem] flex-1 bg-paper/20"></div>
+					<p
+						class="whitespace-nowrap text-[clamp(1.2rem,1.25vw,2.6rem)] font-light uppercase tracking-[0.62em] text-paper/50"
+					>
+						Sport · Entertainment · Fan Engagement
+					</p>
 				</div>
 
-				<p
-					class="animate-fade-up max-w-[65ch] text-[clamp(0.88rem,1.584vw,1.1rem)] font-light leading-[1.65] text-paper/70 [animation-delay:0.45s]"
+				<div
+					class="animate-fade-up flex items-center justify-between [animation-delay:0.15s]"
 				>
-					A <strong class="font-medium text-paper">sport-native attention engine</strong> brands can tap instantly — built for the pulse of live sport, the energy of the crowd, and the moments
-					that move people.
+					<span
+						class="h-px w-[clamp(60px,10vw,80px)] bg-paper/30"
+					></span>
+					<span
+						class="h-px w-[clamp(60px,10vw,80px)] bg-paper/30"
+					></span>
+				</div>
+
+				<div
+					class="animate-fade-up py-[30px] grid grid-cols-[auto_1fr] items-start gap-x-[clamp(1.3rem,3vw,3rem)] pl-[40px] [animation-delay:0.2s]"
+				>
+					<span
+						class="col-start-1 row-start-1 font-display text-[clamp(3.96rem,9.68vw,11.68rem)] font-bold leading-[0.88] tracking-[0.02em]"
+					>
+						Where
+					</span>
+
+					<p
+						class="col-start-2 row-start-1 self-start pt-[3.3em] text-[clamp(1.6rem,1.6vw,1.25rem)] uppercase leading-[1.2] tracking-[0.04em]"
+					>
+						Your fans don't just follow you.<br />
+						They play for you.
+					</p>
+
+					<div
+						class="col-span-2 row-start-2 flex flex-wrap items-baseline gap-x-[clamp(0.8rem,1.6vw,1.5rem)] font-display text-[clamp(3.96rem,9.68vw,11.68rem)] font-bold leading-[0.88] tracking-[0.02em]"
+					>
+						<span>Fans</span>
+						<span class="text-acid">Feel It</span>
+					</div>
+				</div>
+
+				<div
+					class="animate-fade-up flex items-center justify-between [animation-delay:0.35s]"
+				>
+					<span
+						class="h-px w-[clamp(60px,10vw,80px)] bg-paper/30"
+					></span>
+					<span
+						class="h-px w-[clamp(60px,10vw,80px)] bg-paper/30"
+					></span>
+				</div>
+
+				
+
+				<p
+					class="animate-fade-up py-[15px] max-w-[65ch] text-[clamp(0.88rem,1.584vw,1.1rem)] font-light leading-[1.6] text-paper/70 [animation-delay:0.45s]"
+				>
+					A
+					<strong class="font-medium text-paper">
+						sport-native attention engine
+					</strong>
+					brands can tap instantly.
+					<br />
+					Built for the pulse of live sport, the energy of the crowd,
+					and the moments that move people.
 				</p>
 
 				<p
 					class="animate-fade-up max-w-[65ch] text-[clamp(0.88rem,1.584vw,1.1rem)] font-normal leading-[1.6] text-paper/85 [animation-delay:0.52s]"
 				>
-					We turn stars' global fanbase into a <strong class="font-medium text-acid"
-						>competitive digital army.</strong
-					>
+					We turn stars' global fanbase into a
+					<strong class="font-medium text-acid">
+						competitive digital army.
+					</strong>
 				</p>
 
-				<p
-					class="animate-fade-up max-w-[65ch] font-display text-[clamp(1.584rem,3.08vw,2.464rem)] leading-[1] tracking-[0.04em] text-paper [animation-delay:0.6s]"
+				<footer
+					class="animate-fade-up mt-auto grid grid-cols-3 items-center gap-4 pt-[0.5rem] [animation-delay:0.6s]"
 				>
-					Your fans don't just follow you —<br />they <em class="not-italic text-acid">play</em> for
-					you.
-				</p>
-
-				<div class="flex flex-col gap-[0.22rem]">
-					<span class="mt-[0.44rem] text-[0.6336rem] uppercase tracking-[0.18em] text-paper/65">
-						Get in touch
+					<span class="text-[0.66rem] tracking-[0.06em] text-paper/55">
+						© 2026 MIVU STUDIOS INC.
 					</span>
 
-					<a
-						href="mailto:hello@mivu.com"
-						class="border-b border-acid/35 pb-[0.55rem] text-[clamp(0.968rem,1.76vw,1.188rem)] font-medium tracking-[0.01em] text-acid transition-colors hover:border-paper/50 hover:text-paper"
+					<div class="flex items-center justify-center gap-3">
+						<span
+							class="text-[0.66rem] uppercase tracking-[0.18em] text-paper/55"
+						>
+							Get in touch
+						</span>
+
+						<a
+							href="mailto:hello@mivu.com"
+							class="border-b border-acid/35 text-[0.72rem] font-medium tracking-[0.01em] text-acid transition-colors hover:border-paper/50 hover:text-paper"
+						>
+							hello@mivu.com
+						</a>
+					</div>
+
+					<span
+						class="text-right text-[0.66rem] uppercase tracking-[0.14em] text-paper/55"
 					>
-						hello@mivu.com
-					</a>
-				</div>
-
-				<footer class="mt-0 flex w-full items-center justify-between pt-[0.22rem]">
-					<span class="text-[0.66rem] tracking-[0.06em] text-paper/55 text-right">
-						© 2026 MIVU STUDIOS
-					</span>
-					<span class="text-[0.66rem] uppercase tracking-[0.14em] text-paper/55">
 						Sport · Gaming · Live
 					</span>
 				</footer>
